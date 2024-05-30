@@ -7,9 +7,9 @@ import { environment } from "../../environments/environment.prod";
 @Injectable()
 export class MovieService {
     
-    private readonly api: string = environment.apiUrl;
+    //private readonly api: string = environment.apiUrl;
 
-    //private api: string = 'http://localhost:4200'
+    private api: string = 'https://harry-potter-movies-jet.vercel.app'
 
     constructor(private http: HttpClient) { }
 
