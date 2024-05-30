@@ -7,7 +7,6 @@ import { MovieService } from '../Services/movie.service';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { of } from 'rxjs';
 import { Location } from '@angular/common';
-import { Movie } from '../models/movie';
 
 describe('DetailPageComponent', () => {
   let component: DetailPageComponent;

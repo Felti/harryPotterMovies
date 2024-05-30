@@ -2,11 +2,14 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { Movie } from "../models/movie";
+import { environment } from "../../environments/environment.prod";
 
 @Injectable()
 export class MovieService {
+    
+    private readonly api: string = environment.apiUrl;
 
-    private api: string = 'http://localhost:4200'
+    //private api: string = 'http://localhost:4200'
 
     constructor(private http: HttpClient) { }
 
