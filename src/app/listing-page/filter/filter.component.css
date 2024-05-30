@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(234, 234, 234);
+    width: 100%;
+}
+
+.filter-items {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.title span {
+    padding-right: 5px;
+}
+
+.title input {
+   height: 25px;
+}

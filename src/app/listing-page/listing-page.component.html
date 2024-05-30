@@ -1,0 +1,6 @@
+<div class="list-container" style="display: flex; flex-direction: column; align-items: center;">
+    <app-filter (filterChange)="onFilterChanges($event)"></app-filter>
+    <ng-container *ngFor="let movie of filteredMovies">
+        <app-card [movie]="movie"></app-card>
+    </ng-container>
+</div>

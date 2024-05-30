@@ -1,0 +1,22 @@
+<div *ngIf="movie" class="card">
+    <div class="movie-info">
+        <span id="title">{{movie.title}}</span>
+        <div class="additionnal-info">
+            <div class="detail-item">
+                <span>Release Date:</span>
+                <span>{{movie.release_date}}</span>
+            </div>
+            <div class="detail-item">
+                <span>Budget:</span>
+                <span>{{movie.budget | millionDollars}}</span>
+            </div>
+            <div class="detail-item">
+                <span>Duration:</span>
+                <span>{{movie.duration | minutesToHours}}</span>
+            </div>
+        </div>
+    </div>
+    <div (click)="getMovieDetails(movie.id)" class="detail-button">
+        Details
+    </div>
+</div>

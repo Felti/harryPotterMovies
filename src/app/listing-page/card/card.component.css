@@ -1,0 +1,38 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.additionnal-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.detail-item{
+    padding: 5px 10px 5px 0px;
+}
+
+.detail-item span{
+    padding-right: 5px;
+}
+
+.detail-button{
+    background-color: rgb(237, 237, 237); 
+    border-radius: 5px; 
+    padding: 10px; 
+    cursor: pointer;
+}

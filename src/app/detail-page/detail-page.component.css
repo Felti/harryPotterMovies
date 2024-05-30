@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100;
+    margin: 0% 20%;
+}
+
+.back-button {
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgb(220, 220, 220);
+    width: fit-content;
+}
+
+.summary-Section {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-summary {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-details {
+    width: 250px;
+}
+
+.summary-text {
+    padding: 15px 10px;
+}
+
+.details-Section {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-td {
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    border-right: 2px solid black;
+}
+
+.content-td {
+    padding: 10px;
+}
+
+td {
+    border: 2px solid rgb(224, 224, 224);
+}
+
+
+table {
+    border-radius: 4px;
+}

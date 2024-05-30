@@ -1,0 +1,44 @@
+<div *ngIf="movie" class="container">
+    <div (click)="goBack()" class="back-button">back</div>
+    <div class="summary-Section">
+        <h2>{{movie.title}}</h2>
+        <div class="image-summary">
+            <img class="img-details" src="{{movie.poster}}" alt="img">
+            <div class="summary-text">Summary: {{movie.summary}}</div>
+        </div>
+    </div>
+
+    <div class="details-Section">
+        <h2 style="align-self: center;">Details</h2>
+        <table>
+            <tr>
+                <td class="title-td">Box office</td>
+                <td class="content-td">{{movie.box_office | millionDollars}}</td>
+            </tr>
+            <tr>
+                <td class="title-td">Budget</td>
+                <td class="content-td">{{movie.budget | millionDollars}}</td>
+            </tr>
+            <tr>
+                <td class="title-td">Duration</td>
+                <td class="content-td">{{movie.duration | minutesToHours}}</td>
+            </tr>
+            <tr>
+                <td class="title-td">Producers</td>
+                <td class="content-td">
+                    <span *ngFor="let producer of movie.producers; let last = last">{{producer}}<span *ngIf="!last">,
+                        </span></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="title-td">Cinematographers</td>
+                <td class="content-td">
+                    <span
+                        *ngFor="let cinematographer of movie.cinematographers; let last = last">{{cinematographer}}<span
+                            *ngIf="!last">, </span></span>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</div>
